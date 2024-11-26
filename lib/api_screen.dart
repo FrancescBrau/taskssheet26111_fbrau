@@ -13,7 +13,9 @@ class _ApiScreenState extends State<ApiScreen> {
   String _facts = "";
 
   Future<void> fetchData() async {
-    final url = Uri.parse('https://catfact.ninja/fact');
+    // AUFGABE 2 -- falsche URL
+
+    final url = Uri.parse('https://cbfrvndfsjikn/fact');
     try {
       var response = await http.get(url);
       if (response.statusCode == 200) {
